@@ -1,6 +1,6 @@
 # Toolman
 
-TODO: Write a gem description
+A wrap for tool that I create by myself.
 
 ## Installation
 
@@ -22,17 +22,23 @@ Step1: Clone this gem to your dir
 
     git clone
 
-Step1: Gem build
+Step2: Gem build
 
 	gem build debugman.gemspec
 
-Step1: Gem install
+Step3: Gem install
 
 	gem install ./debugman-0.0.1.gem
 	(0.0.1 is version number and will change)
 ## Usage
 
-TODO: Write usage instructions here
+Create a instance
+
+	man = Toolman.new
+	man.say "hi"
+	# => >>>>>>>>>>>>>>>>>Messange>>>>>>>>>>>>>>>>>
+	# => hi
+	# => >>>>>>>>>>>>>>>>>Messange>>>>>>>>>>>>>>>>>
 
 ## Contributing
 
