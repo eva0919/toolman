@@ -32,8 +32,9 @@ module Toolman
 		
 		def initialize
 			@tempPoint = 0 
-			@circle = ["|","\\","-","/"]
+			@circle = [">",">>",">>>",">>>>"," >>>","  >>","   >","    "]
 			@circleSize = @circle.size
+			@colorMechine = Color.new
 		end
 
 		
@@ -48,8 +49,12 @@ module Toolman
 			p = (( (nowPoint*1.0) / endPoint) * 100).floor
 			print "\r"
 			print "                                                  \r"
-			print "#{p}%#{@circle[@tempPoint]}"
+			print "%5d%-3s%-5s%-3s" % [p,"%","#{@circle[@tempPoint]}",""]
 			@tempPoint = (@tempPoint + 1) % @circleSize
+		end
+
+		def puts
+			@colorMechine
 		end
 	end
 
@@ -60,8 +65,12 @@ module Toolman
 			@circle = ["|","\\","-","/"]
 			@circleSize = @circle.size
 			@loadBarPid = 0
+			@colorMechine = Color.new
 		end
-
+		
+		def puts
+			@colorMechine
+		end
 		
 
 		def say(data)
@@ -125,6 +134,35 @@ module Toolman
 
 		def loading_bar_end()
 			@write.write(0)
+		end
+	end
+
+	class Color
+		def red(string)
+			puts colorize1(string, 31)
+		end
+
+		def green(string)
+			puts colorize1(string, 32)
+		end
+		def blue(string)
+			puts colorize1(string, 33)
+		end
+
+		def blue(string)
+			puts colorize1(string, 34)
+		end
+
+		def cyan(string)
+			puts colorize1(string, 36)
+		end
+
+
+		def colorize2(text, color_code)
+		  "\e[1;#{color_code}m#{text}\e[0m"
+		end
+		def colorize1(text, color_code)
+		  "\e[#{color_code}m#{text}\e[0m"
 		end
 	end
 
