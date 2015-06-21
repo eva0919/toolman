@@ -1,7 +1,7 @@
 # Toolman
 
-Toolman is created by some tools that I often use when I coding.
-Following is what can toolman do.
+Toolman is created by some tools that I often use when I coding.     
+Following is what can toolman do.       
 
 1. Easy print string with color.
 2. A cute and simple loading bar on command line.
