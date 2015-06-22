@@ -46,6 +46,14 @@ Create a instance
 	# => hi
 	# => >>>>>>>>>>>>>>>>>Messange>>>>>>>>>>>>>>>>>
 
+Print string/text with color
+	
+	man = Toolman.new
+	man.puts.red "hi"
+	# => hi(red)
+	(Like below image)
+	![toolman](http://i.imgur.com/GhGTBsw.png)
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/toolman/fork )
@@ -53,3 +61,5 @@ Create a instance
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+

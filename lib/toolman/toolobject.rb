@@ -26,4 +26,12 @@ class ToolObject
 	def puts
 		@colorMechine
 	end
+
+	def done
+		self.puts.green! "\n=============================\n   Done!\n   Every thing is good!\n=============================\n"
+	end
+
+	def color_list
+		@colorMechine.color_list
+	end
 end

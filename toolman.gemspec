@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mikeva"]
   spec.email         = ["eva091960601@gmail.com"]
   spec.summary       = "Debugman!"
-  spec.description   = "Tool for debug or any good for coding"
+  spec.description   = "Some nice tools when coding"
   spec.homepage      = "https://github.com/eva0919/debugman"
   spec.license       = "MIT"
 
