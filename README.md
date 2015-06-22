@@ -52,7 +52,8 @@ Print string/text with color
 	man.puts.red "hi"
 	# => hi(red)
 	(Like below image)
-	![toolman](http://i.imgur.com/GhGTBsw.png)
+      
+![toolman](http://i.imgur.com/GhGTBsw.png)
 
 ## Contributing
 
